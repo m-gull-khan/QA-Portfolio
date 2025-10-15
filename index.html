@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Gull Khan | QA Engineer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="sticky-header">
+    <div class="nav-container">
+      <img src="Pic.png" alt="Profile Picture" class="profile-img">
+      <h1>Muhammad Gull Khan</h1>
+      <p>Software Quality Assurance Engineer | Web & Mobile App Testing</p>
+    </div>
+
+    <nav class="nav-bar">
+      <ul class="nav-links">
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>Detail-oriented and highly motivated SQA Engineer with hands-on experience as a Software Testing. Proficient in
+      web and
+      mobile applications, UI/UX, Functional, regression and API testing using Postman. Familiar with performance
+      testing using
+      JMeter and basic automation scripting with Selenium WebDriver and Cypress. Experienced in Agile/Scrum environments
+      with a strong focus on delivering high-quality, user-centric software products.</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Core Skills</h2>
+    <ul>
+      <li>SDLC/STLC</li>
+      <li>Agile (Scrum)</li>
+      <li>Black-Box Testing</li>
+      <li>Exploratory Testing</li>
+      <li>Regression Testing</li>
+      <li>Automation Testing</li>
+      <li>Web Application Testing</li>
+      <li>Mobile Application Testing</li>
+      <li>Cross Browser Testing</li>
+      <li>Sanity Testing & Smoke Testing </li>
+      <li>Acceptance Testing (UAT)</li>
+      <li>Test case design</li>
+      <li>UI/UX Testing</li>
+      <li>Compatibility Testing</li>
+      <li>Accessibility Testing</li>
+      <li>Manual & Functional Testing</li>
+      <li>API Testing (Postman)</li>
+      <li>Performance Testing (JMeter)</li>
+      <li>Bug Tracking (Jira, Excel)</li>
+      <li>Test Planning & Reporting</li>
+    </ul>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Portfolio Projects</h2>
+
+    <div class="project">
+      <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" alt="UI/UX Functional Testing" />
+      <h3>QA Fundamentals</h3>
+      <p>Tested multiple REST APIs for authentication, CRUD operations, and error handling. Delivered a complete Postman
+        collection and detailed test report.</p>
+      <a href="https://drive.google.com/" target="_blank">View Report</a>
+    </div>
+
+    <div class="project">
+      <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" alt="UI/UX Functional Testing" />
+      <h3>SDLC/STLC Process</h3>
+      <p>Tested multiple REST APIs for authentication, CRUD operations, and error handling. Delivered a complete Postman
+        collection and detailed test report.</p>
+      <a href="https://drive.google.com/" target="_blank">View Report</a>
+    </div>
+
+    <div class="project">
+      <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" alt="UI/UX Functional Testing" />
+      <h3>UI/UX Functional Testing</h3>
+      <p>Tested multiple REST APIs for authentication, CRUD operations, and error handling. Delivered a complete Postman
+        collection and detailed test report.</p>
+      <a href="https://drive.google.com/" target="_blank">View Report</a>
+    </div>
+
+    <div class="project">
+      <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" alt="AP Testing" />
+      <h3>API Testing with Postman</h3>
+      <p>Tested multiple REST APIs for authentication, CRUD operations, and error handling. Delivered a complete Postman
+        collection and detailed test report.</p>
+      <a href="https://drive.google.com/" target="_blank">View Report</a>
+    </div>
+
+    <div class="project">
+      <img src="https://images.pexels.com/photos/669619/pexels-photo-669619.jpeg" alt="Performance Testing" />
+      <h3>Performance Testing with JMeter</h3>
+      <p>Performed load and stress testing using JMeter, analyzed throughput, latency, and error rate to identify
+        performance bottlenecks.</p>
+      <a href="https://drive.google.com/" target="_blank">View Results</a>
+    </div>
+
+    <div class="project">
+      <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" alt="UI/UX Functional Testing" />
+      <h3>Database Testing</h3>
+      <p>Tested multiple REST APIs for authentication, CRUD operations, and error handling. Delivered a complete Postman
+        collection and detailed test report.</p>
+      <a href="https://drive.google.com/" target="_blank">View Report</a>
+    </div>
+  </section>
+
+  <section class="certificates">
+    <h2>Certificates</h2>
+    <div class="certificate-grid">
+      <img src="API Testing Certificate.jpg" alt="API Testing Certificate" class="certificate-img">
+      <img src="Performance Testing certificate.png" alt="Performance Testing Certificate" class="certificate-img">
+      <img src="QA Fundamentals.jpg" alt="QA Certificate" class="certificate-img">
+    </div>
+  </section>
+
+  <!-- Popup Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+
+
+  <footer>
+    <p>📧 mgullkhan08@gmail.com | <img class="linkedin-icon" src="linkedin.png" alt=""> <a
+        href="https://www.linkedin.com/in/muhammad-gull-khan-sqa" target="_blank">LinkedIn</a></p>
+  </footer>
+
+
+  <!-- // javascript -->
+
+  <script>
+    const images = document.querySelectorAll('.certificate-img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const close = document.querySelector('.close');
+
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        lightbox.style.display = 'block';
+        lightboxImg.src = img.src;
+      });
+    });
+
+    close.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = 'none';
+      }
+    });
+  </script>
+
+
+</body>
+
+</html>
