@@ -133,6 +133,8 @@ section {
 h2 {
   color: #0077b6;
   margin-bottom: 0.5rem;
+  text-align: center;
+
   /* width: 100%;
   display: block; */
 }
@@ -160,7 +162,7 @@ h2 {
 
 .projects h2 {
   grid-column: 1 / -1;
-  text-align: left;
+  text-align: center;
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -201,7 +203,7 @@ h2 {
 .certificates h2 {
   color: #0077b6;
   margin-bottom: 1.5rem;
-  text-align: left; /* aligns heading same as Core Skills & Portfolio Projects */
+  text-align: center; /* aligns heading same as Core Skills & Portfolio Projects */
 }
 
 .certificate-grid {
@@ -264,29 +266,126 @@ h2 {
   color: #0077b6;
 }
 
-footer {
+.contact-section {
+  padding: 80px 10%;
+  background-color: #f8f9fa;
   text-align: center;
-  padding: 1rem;
-  background: #0077b6;
+}
+
+.contact-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #0077b6;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.contact-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.contact-info p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.social-links a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #007bff;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007bff;
+}
+
+.contact-form button {
+  background-color: #007bff;
   color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+
+footer {
+  background-color: #0a66c2;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  font-family: 'Poppins', sans-serif;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-top: 40px;
 }
 
 footer a {
   color: white;
   text-decoration: none;
   font-weight: 500;
-  margin-left: 5px;
 }
 
 footer a:hover {
   text-decoration: underline;
+  color: #ffd700;
 }
 
 .linkedin-icon {
   width: 18px;
   height: 18px;
   vertical-align: middle;
-  margin-left: 8px;
-  margin-right: 3px;
-  filter: brightness(0) invert(1); /* makes icon white */
+  margin-right: 5px;
+  filter: brightness(0) invert(1);
 }
+
+footer p {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
